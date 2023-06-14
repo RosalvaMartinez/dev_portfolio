@@ -4,8 +4,7 @@ import App from './App.tsx'
 import './index.css'
 
 import About from './components/About.tsx'
-import Email from './components/Email.tsx'
-import MyResume from './components/MyResume.tsx'
+import Layout from './components/Layout.tsx'
 
 import {
   createBrowserRouter,
@@ -18,20 +17,14 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: "/email",
-    element: <Email />
-  },
-  {
     path: "/about",
     element: <About />
-  },
-  {
-    path: "/resume",
-    element: <MyResume />
   }
 ])
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Layout>
+      <RouterProvider router={router} />
+    </Layout>
   </React.StrictMode>,
 )
