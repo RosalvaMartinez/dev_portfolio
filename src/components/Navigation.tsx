@@ -1,9 +1,7 @@
 // import linkedInLogo from '/linkedInLogo.png'
 // import githubLogo from '/githubLogo.png'
 
-import {
-    Link
-} from "react-router-dom";
+
 
 
 function Navigation() {
@@ -34,10 +32,10 @@ function Navigation() {
         <nav>
              <ul className="flex flex-row p-6">
                  <button className="bg-slate-900 hover:bg-blue-500 active:bg-blue-400 p-2 rounded-lg text-sm text-slate-100 ...">
-                     <Link to="/">Home</Link>
+                     <a href="/">Home</a>
                  </button>
                  <button className="bg-slate-900 hover:bg-blue-500 active:bg-blue-400 p-2 rounded-lg text-sm text-slate-100 ...">
-                     <li className="mx-2"><Link to="/about">About Me</Link></li>
+                     <li className="mx-2"><a href="/about">About Me</a></li>
                  </button>
                  <button className="bg-slate-900 hover:bg-blue-500 active:bg-blue-400 p-2 rounded-lg text-sm text-slate-100 ...">
                      <li className="mx-2"><a href="https://github.com/RosalvaMartinez">Github</a></li>
@@ -46,7 +44,10 @@ function Navigation() {
                      <li className="mx-2"><a href="https://www.linkedin.com/in/rosalva-hazel-martinez-a65bb9276/">Linked In</a></li>
                  </button>
                  <button className="bg-slate-900 hover:bg-blue-500 active:bg-blue-400 p-2 rounded-lg text-sm text-slate-100 ...">
-                     <li className="mx-2"><Link to="/resume">My Resume</Link></li>
+                     <li className="mx-2"><a href="https://www.dropbox.com/scl/fi/wp6nq1cark0epjl0eu0kv/Rosalva_Hazel_Martinez_Resume.pdf?dl=0&rlkey=66x8ci3vojkrwcsz3yfvnh6se">My Resume</a></li>
+                 </button>
+                 <button className="bg-slate-900 hover:bg-blue-500 active:bg-blue-400 p-2 rounded-lg text-sm text-slate-100 ...">
+                     <li className="mx-2"><a href="https://www.dropbox.com/scl/fi/ecslt4nlodv2dfnje6q99/__martinez1.pdf?dl=0&rlkey=375em0xy41fufnifouy8lazxy">Certifications</a></li>
                  </button>
              </ul>
          </nav>
